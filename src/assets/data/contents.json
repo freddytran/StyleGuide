@@ -1,0 +1,68 @@
+{
+  "count": 2,
+  "posts": [
+    {
+      "user": {
+        "_id": "5c0593d4f89d1a04e045be34",
+        "email": "tranfreddy123@gmail.com",
+        "userName": "SuperFred5000"
+      },
+      "contentID": "5c0ac4cf749af405e810be62",
+      "contentTitle": "Freddys SuperPost",
+      "contentTime": "Fri Dec 07 2018 20:06:55 GMT+0100 (Mitteleuropäische Zeit)",
+      "contentImage": "/assets/imgs/captainMarvel.jpg",
+      "metaInfo": [
+        {
+          "_id": "5c0ac4cf749af405e810be63",
+          "likes": 0,
+          "shareNumber": 0,
+          "rating": 0
+        }
+      ],
+      "clothInfo": [],
+      "comments": []
+    },
+    {
+      "user": {
+        "_id": "5c0593d4f89d1a04e045be34",
+        "email": "tranfreddy123@gmail.com",
+        "userName": "SuperFred5000"
+      },
+      "contentID": "5c0ac574749af405e810be64",
+      "contentTitle": "Freddys SuperGeiloMatico",
+      "contentTime": "Fri Dec 07 2018 20:09:40 GMT+0100 (Mitteleuropäische Zeit)",
+      "contentImage": "/assets/imgs/captainMarvel2.jpg",
+      "metaInfo": [
+        {
+          "_id": "5c0ac574749af405e810be65",
+          "likes": 0,
+          "shareNumber": 0,
+          "rating": 0
+        }
+      ],
+      "clothInfo": [],
+      "comments": []
+    },
+    {
+      "user": {
+        "_id": "5c0593d4f89d1a04e045be34",
+        "email": "tranfreddy123@gmail.com",
+        "userName": "SuperFred5000"
+      },
+      "contentID": "5c0ac574749af405e810be64",
+      "contentTitle": "Freddys SuperGeiloMatico",
+      "contentTime": "Fri Dec 07 2018 20:09:40 GMT+0100 (Mitteleuropäische Zeit)",
+      "contentImage": "/assets/imgs/captainMarvel3.jpg",
+      "metaInfo": [
+        {
+          "_id": "5c0ac574749af405e810be65",
+          "likes": 0,
+          "shareNumber": 0,
+          "rating": 0
+        }
+      ],
+      "clothInfo": [],
+      "comments": []
+    }
+  ]
+}

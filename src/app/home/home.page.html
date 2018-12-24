@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="homeContent">
+    <ion-list class="contentList">
+      <ng-container class="ngContainer" *ngFor="let content of post">
+        <ion-card (click)="pushPage()" class="fullCard">
+          <ion-img src="http://localhost:3000/{{content.contentImage}}"></ion-img>
+          <ion-card-header>
+            <ion-card-title>{{content.contentTitle}}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-grid no-padding="true">
+              <ion-row justify-content-start="true">
+                <ion-col size="2">
+                  <ion-icon name="heart-empty"></ion-icon>
+                </ion-col>
+                <ion-col size="2">
+                  <ion-icon name="rainy"></ion-icon>
+                </ion-col>
+                <ion-col size="2">
+                  <ion-icon name="share-alt"></ion-icon>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+            <p>This is the first Content! This should actually drawn from the database!</p>
+            <!--<form>
+              <ion-item>
+                <ion-grid>
+                  <ion-row>
+                    <ion-col size="8">
+                      <ion-input class="commentInputs" type="text" [(ngModel)]="value" name="comment" placeholder="Write a Comment!"></ion-input>
+                    </ion-col>
+                    <ion-col size="4">
+                      <ion-button type="submit" (click)="pushPage()">Submit</ion-button>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </ion-item>
+            </form>-->
+          </ion-card-content>
+        </ion-card>
+      </ng-container>
+    </ion-list>
+
+</ion-content>

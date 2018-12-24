@@ -1,0 +1,44 @@
+{
+  "count": 3,
+  "comments": [
+    {
+      "_id": "5c0acf9b4020ab0a88bba8dd",
+      "user": {
+        "_id": "5c0593d4f89d1a04e045be34",
+        "email": "tranfreddy123@gmail.com",
+        "userName": "SuperFred5000",
+        "password": "$2a$10$VMnOs4/xIry9twzKHyZyoeyvc/uLoOf5rbRSyg7jpAAZjJi14LrFK",
+        "__v": 0
+      },
+      "content": "5c0ac4cf749af405e810be62",
+      "commentTime": "Fri Dec 07 2018 20:52:59 GMT+0100 (Mitteleuropäische Zeit)",
+      "userComment": "Mensch Freddy was ein geiles Bild!"
+    },
+    {
+      "_id": "5c0ad0c9db9b770fccf22264",
+      "user": {
+        "_id": "5c0593d4f89d1a04e045be34",
+        "email": "tranfreddy123@gmail.com",
+        "userName": "SuperFred5000",
+        "password": "$2a$10$VMnOs4/xIry9twzKHyZyoeyvc/uLoOf5rbRSyg7jpAAZjJi14LrFK",
+        "__v": 0
+      },
+      "content": "5c0ac4cf749af405e810be62",
+      "commentTime": "Fri Dec 07 2018 20:58:01 GMT+0100 (Mitteleuropäische Zeit)",
+      "userComment": "Mensch Freddy was ein geiles Bild WTF!"
+    },
+    {
+      "_id": "5c0ad0d0db9b770fccf22265",
+      "user": {
+        "_id": "5c0593d4f89d1a04e045be34",
+        "email": "tranfreddy123@gmail.com",
+        "userName": "SuperFred5000",
+        "password": "$2a$10$VMnOs4/xIry9twzKHyZyoeyvc/uLoOf5rbRSyg7jpAAZjJi14LrFK",
+        "__v": 0
+      },
+      "content": "5c0ac4cf749af405e810be62",
+      "commentTime": "Fri Dec 07 2018 20:58:08 GMT+0100 (Mitteleuropäische Zeit)",
+      "userComment": "Mensch Freddy was ein geiles Bild WTF!"
+    }
+  ]
+}

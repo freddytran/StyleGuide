@@ -1,0 +1,14 @@
+{
+  "count": 1,
+  "users": [
+    {
+      "_id": "5c0593d4f89d1a04e045be34",
+      "email": "tranfreddy123@gmail.com",
+      "password": "$2a$10$VMnOs4/xIry9twzKHyZyoeyvc/uLoOf5rbRSyg7jpAAZjJi14LrFK",
+      "request": {
+        "type": "GET",
+        "url": "http://localhost:3000/users/5c0593d4f89d1a04e045be34"
+      }
+    }
+  ]
+}
