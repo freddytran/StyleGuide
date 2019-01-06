@@ -12,12 +12,12 @@ export class PostServiceService {
     apiUrl = 'assets/data/contents.json';
     apiUrl2 = 'https://swapi.co/api/films';
     apiUrl3 = 'http://192.168.178.21:3000/contents/';
-  apiUrl4 = 'http://localhost:3000/contents/';
+    apiUrl4 = 'http://localhost:3000/contents/';
 
-    apiCommentForContent = 'http://192.168.178.21:3000/comments/';
+    apiCommentForContent = 'http://localhost:3000/comments/';
 
     getAllPost(): Observable<any> {
-        return this.http.get(this.apiUrl4);
+        return this.http.get(this.apiUrl3);
     }
 
     getCommentsFromPost(contentID): Observable<any> {

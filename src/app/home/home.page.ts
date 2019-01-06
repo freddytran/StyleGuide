@@ -13,6 +13,9 @@ export class HomePage {
   dynamicContentID = '';
   comments: any;
   post: any;
+  commentMap = {};
+
+  gotComments = false;
 
   constructor(private nav: NavController, public postService: PostServiceService) {
     this.getAllContent();
@@ -26,6 +29,7 @@ export class HomePage {
     this.postService.getAllPost().subscribe((res) => {
       this.post = res.posts;
       console.log(this.post);
+      this.getComments(this.post);
       /*for (let i = 0; i <= this.post.length - 1; i++) {
         this.post[i].comment = this.getComments(this.post[i].contentID);
         /!*this.post.splice(i, 0, this.getComments(this.post[i].contentID));*!/
@@ -35,11 +39,26 @@ export class HomePage {
   }
 
   getComments(contentID) {
-    console.log('Funktioniet das? ' + contentID);
-    this.postService.getCommentsFromPost(contentID).subscribe((res) => {
-      this.comments = res.comments;
-      console.log(this.comments);
-      return this.comments;
-    });
+    for (let i = 0; i <= contentID.length - 1; i++) {
+      this.postService.getCommentsFromPost(contentID[i].contentID).subscribe((res) => {
+        if (res.count > 0) {
+          this.commentMap[contentID[i].contentID] = res;
+          console.log(this.commentMap['5c15826f7aeb9b2e700716bd']);
+        } else {
+          console.log('Hier wurden keine Kommis gefunden');
+        }
+      });
+    }
+    /*this.callBelongingComments('5c15826f7aeb9b2e700716bd');*/
+  }
+
+  callBelongingComments(contentID) {
+    console.log('Check ' + this.commentMap);
+    if (contentID in this.commentMap) {
+      console.log(this.commentMap);
+      return true;
+    } else {
+      return true;
+    }
   }
 }

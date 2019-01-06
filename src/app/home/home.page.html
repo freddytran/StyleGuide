@@ -26,6 +26,14 @@
                 </ion-col>
               </ion-row>
             </ion-grid>
+            <ng-container *ngFor="let comments of commentMap | keyvalue">
+              <div *ngIf="content.contentID === comments.key">
+                <div class="commentSection" *ngFor="let comm of comments.value.comments">
+                  <p><span class="userName">{{comm.user.userName}}</span> {{comm.userComment}}</p>
+                  <hr>
+                </div>
+              </div>
+            </ng-container>
             <p>This is the first Content! This should actually drawn from the database!</p>
             <!--<form>
               <ion-item>
